@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="cuadro">
+  <section class="formulario">
+    <h1 class="titulo">Registre el Formulario</h1>
+    <form id="formId" action="">
+      <input class="escribir" type="text" id="nombreId" name="nombre" placeholder="Ingrese su Nombre"/>
+      <span id="errorNombreId"></span>
+      <input class="escribir" type="text" id="apellidoId" name="apellido" placeholder="Ingrese su Apellido"/>
+      <span id="errorApellidoId"></span>
+      <input class="escribir" type="number" id="edadId" name="edad" placeholder="Ingrese su Edad"/>
+      <input class="escribir" type="email" id="emailId" name="email" placeholder="Ingrese su Email"/>
+      <input class="clik" type="date" id="aniosId" name="anios" placeholder="Ingrese sus Años"/>
+      <input class="clik" type="range" id="mostraRangoId" name="" placeholder="Rango"/>
+      <select class="clik" name="estadoCivil" id="estadoCivilId">
+        <option value="vSoltero">Soltero</option>
+        <option value="vCasado">Casado</option>
+      </select>
+      <label class="labelFuera" for="preguntaMascotas">¿Tiene Mascotas?</label>
+      <section class="mascotas" id="mascotasId">
+        <div>
+          <input type="checkbox" id="perroId" name="perro" value ="perro" checked>
+          <label for="perro">Perro</label>
+        </div>
+        <div>
+          <input value="gato" type="checkbox" id="gatoId" name="gato" checked>
+          <label for="gato">Gato</label>
+        </div>
+        <div>
+          <input value="leon" type="checkbox" id="leonId" name="leon" checked>
+          <label for="leon">Leon</label>
+        </div>
+        <div>
+          <input value="chancho" type="checkbox" id="chanchoId" name="chancho">
+          <label for="chancho">Chancho</label>
+        </div>
+      </section>
+      <label class="labelFuera" for="preguntaGenero">Genero</label>
+      <section class="genero" id="generoId">
+        <input type="radio" id="hombreId" name="genero" value="hombre">
+        <label for="html">hombre</label><br>
+        <input type="radio" id="mujerId" name="genero" value="mujer">
+        <label for="css">Mujer</label><br>
+      </section>
+    </form>
+    <button onclick="mandarData()" class="button" id="buttonId">
+        GUARDAR
+    </button>
+  </section>
+</div>  
+  <script src="main.js"></script>  
+</body>
+</html>
